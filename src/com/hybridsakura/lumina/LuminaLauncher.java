@@ -39,12 +39,18 @@ public class LuminaLauncher {
 //        MinecraftCoordinate coordinate3 = new MinecraftCoordinate(-489, 50, -234);
 
 //        MinecraftCoordinate coordinate3 = new MinecraftCoordinate(-489, 50, -234);
-        MinecraftCoordinate coordinate2 = new MinecraftCoordinate(575, 60, 105);
-        MinecraftCoordinate coordinate3 = new MinecraftCoordinate(593, 60, -117);
-        MinecraftCoordinatePair coordinatePair2 = new MinecraftCoordinatePair(coordinate2, coordinate3);
-        FlexibleParams flexibleParams_3 = new FlexibleParams();
-        flexibleParams_3.setSequenceName("[lumina-tunnel]");
-        luminaEngine.LuminaMasterSequence(coordinatePair2, null, flexibleParams_3);
+//        MinecraftCoordinate coordinate2 = new MinecraftCoordinate(1209, 56, 4);
+//        MinecraftCoordinate coordinate3 = new MinecraftCoordinate(1309, 56, -2);
+//        MinecraftCoordinatePair coordinatePair2 = new MinecraftCoordinatePair(coordinate2, coordinate3);
+//        FlexibleParams flexibleParams_3 = new FlexibleParams();
+//        flexibleParams_3.setSequenceName("[lumina-tunnel]");
+//        luminaEngine.LuminaMasterSequence(coordinatePair2, null, flexibleParams_3);
+
+        //  4
+        MinecraftCoordinate coordinate5 = new MinecraftCoordinate(-150, 76, -433);
+        FlexibleParams flexibleParams_4 = new FlexibleParams();
+        flexibleParams_4.setSequenceName("[lumina-basics]");
+        luminaEngine.LuminaMasterSequence(null, coordinate5, flexibleParams_4);
 
         System.out.println("程序结束");
     }

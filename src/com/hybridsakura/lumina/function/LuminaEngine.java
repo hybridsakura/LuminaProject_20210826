@@ -1,9 +1,6 @@
 package com.hybridsakura.lumina.function;
 
-import com.hybridsakura.lumina.builder.LuminaBeaconBuilder;
-import com.hybridsakura.lumina.builder.LuminaBridgeBuilder;
-import com.hybridsakura.lumina.builder.LuminaShelterBuilder;
-import com.hybridsakura.lumina.builder.LuminaTunnelBuilder;
+import com.hybridsakura.lumina.builder.*;
 import com.hybridsakura.lumina.entity.FlexibleParams;
 import com.hybridsakura.lumina.entity.MinecraftCoordinate;
 import com.hybridsakura.lumina.entity.MinecraftCoordinatePair;
@@ -17,6 +14,10 @@ public class LuminaEngine {
             sequenceName = params[0].getSequenceName();
             System.out.println("[AI-LM][] LuminaSystem 序列="+sequenceName+" 准备执行...");
             switch (sequenceName) {
+                case "[lumina-basics]":
+                    LuminaBasicsBuilder basicsBuilder = new LuminaBasicsBuilder();
+                    basicsBuilder.lumina_InitBasicsBuild(coordinatePair, coordinate ,params[0]);
+                    break;
                 case "[lumina-beacon]":
                     LuminaBeaconBuilder beaconBuilder = new LuminaBeaconBuilder();
                     beaconBuilder.lumina_InitBeaconBuild(coordinatePair, coordinate ,params[0]);

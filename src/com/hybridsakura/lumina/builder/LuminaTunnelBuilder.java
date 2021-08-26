@@ -36,8 +36,8 @@ public class LuminaTunnelBuilder {
         MinecraftCoordinatePair tempCoordinatePair1, tempCoordinatePair2, tempCoordinatePair3, tempCoordinatePair4;
 
         LuminaFunction luminaFunction = new LuminaFunction();
-        tempCoordinatePair1 = luminaFunction.luminaFinalTunnelBuild(coordinatePair.getMinecraftCoordinate1(), direction, 2, length, "").get(0);
-        tempCoordinatePair2 = luminaFunction.luminaFinalTunnelBuild(coordinatePair.getMinecraftCoordinate1(), direction, 2, length, "").get(1);
+        tempCoordinatePair1 = luminaFunction.luminaFinalTunnelBuild(coordinatePair.getMinecraftCoordinate1(), direction, 4, length, "").get(0);
+        tempCoordinatePair2 = luminaFunction.luminaFinalTunnelBuild(coordinatePair.getMinecraftCoordinate1(), direction, 3, length, "").get(1);
 //        tempCoordinatePair3 = luminaFunction.luminaFinalTunnelBuild(coordinatePair.getMinecraftCoordinate1(), direction, 2, length, "").get(2);
 //        tempCoordinatePair4 = luminaFunction.luminaFinalTunnelBuild(coordinatePair.getMinecraftCoordinate1(), direction, 2, length, "").get(3);
 
